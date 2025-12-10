@@ -61,4 +61,4 @@ Requires Node.js 18+ (or any runtime supported by Vite 7).
 - Surface live links for every showcased project once deployments are ready.
 
 ---
-Crafted by (Blurry Shady · Full-stack developer focused on premium web experiences.
+Crafted by Blurry Shady · Full-stack developer focused on premium web experiences.
