@@ -13,13 +13,14 @@ export const projects = [
       "A full-featured Django-based blog application designed to manage posts, user profiles and images. It includes authentication, CRUD operations and a clean responsive layout serving as a foundation for future app announcements and idea sharing. Focused on backend functionality with potential for frontend enhancements.",
     image:
       blogImage,
-    tech: ["Python", "Django", "HTML", "CSS", "Bootstrap"],
+    tech: ["Python", "Django", "HTML", "CSS", "Cloudinary", "Brevo (Anymail)", "Render", "WhiteNoise"],
     features: [
-      "User authentication (login, register, logout)",
-      "Profile management with image upload",
-      "Create, edit, and delete blog posts",
-      "Dynamic home page and post detail views",
-      "Media file handling with Django settings"
+      "Secure user authentication (register, login, logout, password reset via email)",
+      "Profile management with avatar upload (stored on Cloudinary)",
+      "Create, edit, and delete blog posts with categories and SEO-friendly URLs",
+      "Responsive custom UI with light/dark “theme” toggle",
+      "Email integration using Brevo + Anymail for password recovery",
+      "Static files served via WhiteNoise and uptime monitored with UptimeRobot",
     ],
     liveUrl: "#",
     status: "live",

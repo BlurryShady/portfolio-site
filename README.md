@@ -1,10 +1,10 @@
 # BlurryShady Portfolio
 
-A cinematic React + Vite portfolio site that acts as the main landing page for Blurry Shady (Dogukan), a full-stack developer. It combines a marble gallery aesthetic with an interactive, shader-driven sea backdrop and showcases current flagship projects.
+A cinematic React + Vite portfolio site that acts as the main landing page for my other projects that I've did as full-stack developer. It combines a marble gallery aesthetic with an interactive, shader-driven sea backdrop and showcases current flagship projects.
 
 ## Highlights
 - Three.js ocean scene with custom ripple shaders and layout-aware obstacles that part the water around content.
-- Marble-inspired gallery cards that transition from blurred to sharp on hover to emphasize clarity-through-craft.
+- Marble-inspired gallery cards which I turned into stone design later that transition from blurred to sharp on hover to emphasize clarity-through-craft.
 - Inline project detail banner that anchors beside the selected card without navigating away.
 - Fully responsive layout tuned for desktop and mobile breakpoints.
 - Built as a pure frontend so it can deploy anywhere (Netlify, Vercel, GitHub Pages, etc.).
@@ -61,4 +61,4 @@ Requires Node.js 18+ (or any runtime supported by Vite 7).
 - Surface live links for every showcased project once deployments are ready.
 
 ---
-Crafted by Dogukan (Blurry Shady) · Full-stack developer focused on premium web experiences.
+Crafted by (Blurry Shady · Full-stack developer focused on premium web experiences.
