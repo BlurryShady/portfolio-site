@@ -22,7 +22,7 @@ export const projects = [
       "Email integration using Brevo + Anymail for password recovery",
       "Static files served via WhiteNoise and uptime monitored with UptimeRobot",
     ],
-    liveUrl: "#",
+    liveUrl: "https://blog.blurryshady.dev",
     status: "live",
     position: { x: "left", y: "top" },
     theme: {
@@ -37,20 +37,21 @@ export const projects = [
     id: 2,
     name: "Task Manager",
     slug: "taskmanager",
-    tagline: "A clean, fast and intuitive way to stay organized.",
+    tagline: "A collaborative task manager with real-time boards, secure authentication and email verification.",
     description:
-      "A backend-driven task management system built with Django. It provides secure task creation, editing, deletion and user authentication. Users can invite each other and work together on the boards they created. The API can be integrated with any frontend framework in the future.",
+      "A production-ready task management system built with Django. It features secure authentication with email verification, collaborative workspaces, board-based task organization and a RESTful API designed for future frontend integrations. The application is deployed using modern DevOps practices, including environment-based configuration, background email delivery and uptime monitoring.",
     image:
       taskmanagerImage,
-    tech: ["Python", "Django", "SQLite", "REST Framework", "HTML", "CSS"],
+    tech: ["Python", "Django", "SQLite", "REST Framework", "HTML", "CSS", "Gunicorn", "Render", "Brevo (SMTP + API fallback)", "UptimeRobot",],
     features: [
-      "Full CRUD operations for tasks",
-      "User registration & login system",
-      "REST API endpoints for all actions",
-      "Secure backend validation",
-      "User invitations to collaborate on boards"
+      "Secure user authentication with email verification",
+      "Workspace-based collaboration system",
+      "Board & task management with full CRUD support",
+      "Role-aware permissions and backend validation",
+      "RESTful API architecture ready for frontend integration",
+      "Production deployment with uptime monitoring and email delivery",
     ],
-    liveUrl: "#",
+    liveUrl: "https://tasks.blurryshady.dev",
     status: "live",
     position: { x: "center", y: "top" },
     theme: {
@@ -65,19 +66,21 @@ export const projects = [
     id: 3,
     name: "Gear Store E-commerce",
     slug: "gearstore",
-    tagline: "High-end gaming gear store built with Django & React",
+    tagline: "A personal full-stack e-commerce playground showcasing real-world Django & React integration.",
     description:
-      "A full-stack e-commerce application featuring product search, filtering, sorting, cart system with live totals, dynamic product pages and a modern glass-UI design with Tailwind. Built with Django REST backend and React frontend. Site has products that I have interest on and thinking about purchasing in the future.",
+      "A full-stack e-commerce application featuring product browsing, filtering, sorting, dynamic product pages and a real-time cart system with live totals. Built with a Django REST backend and a React frontend. The project focuses on clean architecture, API-driven design and a modern glass-UI aesthetic using Tailwind CSS. This store represents a personal gear wishlist and serves as a hands-on playground for building and deploying production-style full-stack applications.",
     image:
       gearstoreImage,
-    tech: ["React", "Tailwind", "Django REST Framework", "PostgreSQL"],
+    tech: ["React", "Tailwind", "Django REST Framework", "PostgreSQL", "Render", "Netlify"],
     features: [
-      "Interactive product filters & sorting",
+      "Interactive product browsing with filtering & sorting",
       "Cart system with live total calculations",
-      "Dynamic product pages with images & descriptions",
-      "Responsive UI with modern gradients and glass effects"
+      "Order creation flow connected to Django admin",
+      "Responsive UI with modern gradients and glass effects",
+      "REST API driven architecture",
+      "Deployed full-stack setup (React frontend + Django API)",
     ],
-    liveUrl: "#",
+    liveUrl: "https://store.blurryshady.dev",
     status: "live",
     position: { x: "right", y: "top" },
     theme: {
@@ -97,16 +100,19 @@ export const projects = [
     description:
       "Full-stack web application featuring hero selection, team analysis, synergy detection and community team sharing. Built with React frontend and Django REST backend. Has Web Socket integration for real-time updates.",
     image: rivalsImage,
-    tech: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
+    tech: ["React", "Django", "PostgreSQL", "Tailwind CSS", "Cloudinary", "Web Sockets", "Render", "Cloudflare Pages"],
     features: [
-      "Interactive hero selection with 45 characters",
+      "Interactive hero selection with full roster",
       "Real-time team composition analysis",
       "Synergy and counter detection",
       "User authentication and team saving",
       "Community voting and comments",
-      "Web Socket integration for live updates"
+      "Web Socket integration for live updates",
+      "RESTful API architecture",
+      "Real-time updates via WebSockets",
+      "Secure authentication and permissions",
     ],
-    liveUrl: "https://rivalsteambuilder.blurryshady.me",
+    liveUrl: "https://rivals.blurryshady.dev",
     status: "live",
     position: { x: "left", y: "middle" },
     theme: {

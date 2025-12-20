@@ -5,6 +5,7 @@ import IntroSection from './components/IntroSection';
 import ProjectCard from './components/ProjectCard';
 import ProjectDetailBanner from './components/ProjectDetailBanner';
 import { projects } from './data/project';
+import BackgroundMusic from "./components/BackgroundMusic";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -113,6 +114,8 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-transparent">
       
+        <BackgroundMusic />
+        
       {/* 1. BACKGROUND: The Sea (Z-0) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
          <SeaEffect obstacleTargets={obstacleTargets} />
