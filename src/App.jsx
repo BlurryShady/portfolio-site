@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect, useMemo, createRef } from 'react';
-// import FogEffect from './components/FogEffect'; // <-- This was likely causing the global blur!
 import SeaEffect from './components/SeaEffect';
 import IntroSection from './components/IntroSection';
 import ProjectCard from './components/ProjectCard';
 import ProjectDetailBanner from './components/ProjectDetailBanner';
 import { projects } from './data/project';
 import BackgroundMusic from "./components/BackgroundMusic";
+import PixelSnowBackground from "./components/PixelSnow";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -113,28 +113,28 @@ function App() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-transparent">
-      
-        <BackgroundMusic />
-        
+      <BackgroundMusic />
+
       {/* 1. BACKGROUND: The Sea (Z-0) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-         <SeaEffect obstacleTargets={obstacleTargets} />
+        <SeaEffect obstacleTargets={obstacleTargets} />
       </div>
 
-      {/* 2. DECORATION: (none for now, reserved layer) */}
+      {/* 2. BACKGROUND OVERLAY: Pixel Snow (Z-10) */}
+      <div className="fixed inset-0 z-10 pointer-events-none">
+        <PixelSnowBackground />
+      </div>
 
       {/* 3. CONTENT: Text and Cards (Z-20) */}
       <main className="relative z-20 pointer-events-none">
-        
-        {/* Intro Wrapper - Wrapped in div to ensure ref works for water effect */}
-          <div ref={heroRef} className="pointer-events-auto">
-            <IntroSection
-             titleRef={heroTitleRef}
-             summaryRef={heroSummaryRef}
-             indicatorRef={heroIndicatorRef}
-            />
-          </div>
-        
+        <div ref={heroRef} className="pointer-events-auto">
+          <IntroSection
+            titleRef={heroTitleRef}
+            summaryRef={heroSummaryRef}
+            indicatorRef={heroIndicatorRef}
+          />
+        </div>
+
         <section className="min-h-screen px-8 pb-20 pt-36">
           <h2
             ref={galleryHeadingRef}
@@ -147,6 +147,7 @@ function App() {
           >
             Gallery of Works
           </h2>
+
           <p
             ref={gallerySubheadingRef}
             className="text-center mb-24 text-lg drop-shadow-md"
@@ -154,7 +155,7 @@ function App() {
           >
             Hover to bring clarity
           </p>
-          
+
           <div
             ref={galleryRef}
             className="project-grid max-w-6xl mx-auto relative pointer-events-auto mt-10"
