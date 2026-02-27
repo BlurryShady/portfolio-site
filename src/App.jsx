@@ -135,6 +135,33 @@ function App() {
           />
         </div>
 
+        {/* Server Notice Section */}
+        <section className="px-8 py-16 pointer-events-auto">
+          <div className="max-w-2xl mx-auto text-center">
+            <div 
+              className="border-2 rounded-lg p-8"
+              style={{
+                borderColor: 'rgba(255, 255, 255, 0.15)',
+                background: 'rgba(30, 41, 59, 0.3)',
+                backdropFilter: 'blur(10px)',
+              }}
+            >
+              <p 
+                className="text-lg leading-relaxed"
+                style={{ 
+                  background: 'linear-gradient(to right, #ffffff, #c7dbff)',
+                  WebkitBackgroundClip: 'text',
+                  color: 'transparent',
+                }}
+              >
+                Projects are hosted on free-tier servers.<br />
+                If the site is idle, the server may sleep.<br />
+                Please wait ~30 seconds on first visit.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="min-h-screen px-8 pb-20 pt-36">
           <h2
             ref={galleryHeadingRef}
