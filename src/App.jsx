@@ -5,7 +5,6 @@ import ProjectCard from './components/ProjectCard';
 import ProjectDetailBanner from './components/ProjectDetailBanner';
 import { projects } from './data/project';
 import BackgroundMusic from "./components/BackgroundMusic";
-import PixelSnowBackground from "./components/PixelSnow";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -121,9 +120,9 @@ function App() {
       </div>
 
       {/* 2. BACKGROUND OVERLAY: Pixel Snow (Z-10) */}
-      <div className="fixed inset-0 z-10 pointer-events-none">
+{/*       <div className="fixed inset-0 z-10 pointer-events-none">
         <PixelSnowBackground />
-      </div>
+      </div> */}
 
       {/* 3. CONTENT: Text and Cards (Z-20) */}
       <main className="relative z-20 pointer-events-none">
